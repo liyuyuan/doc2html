@@ -20,10 +20,10 @@ import org.apache.poi.ss.usermodel.Color;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.Workbook; 
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.ss.util.CellRangeAddress;
-import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;çˆ±æ˜¯è´¢äº§å•Šçˆ±èŒ¶å¸‚åœº 
 import org.apache.poi.xssf.usermodel.XSSFColor;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 
@@ -81,12 +81,12 @@ public class Excel2Html implements Doc2Html {
 									tdText = FormartUtil.formartNumber1(cell.getNumericCellValue());
 									/**
 									 * switch (style) { //
-									 * µ¥Ôª¸ñ¸ñÊ½Îª°Ù·Ö±È£¬²»¸ñÊ½»¯»áÖ±½ÓÒÔĞ¡ÊıÊä³ö case 9: value =
+									 * å•å…ƒæ ¼æ ¼å¼ä¸ºç™¾åˆ†æ¯”ï¼Œä¸æ ¼å¼åŒ–ä¼šç›´æ¥ä»¥å°æ•°è¾“å‡º case 9: value =
 									 * new DecimalFormat("0.00%").format(hcell
 									 * .getNumericCellValue()); break; //
-									 * DateUtilÅĞ¶ÏÆä²»ÊÇÈÕÆÚ¸ñÊ½£¬ÔÚÕâÀïÒ²¿ÉÒÔÉèÖÃÆäÊä³öÀàĞÍ case 57:
+									 * DateUtilåˆ¤æ–­å…¶ä¸æ˜¯æ—¥æœŸæ ¼å¼ï¼Œåœ¨è¿™é‡Œä¹Ÿå¯ä»¥è®¾ç½®å…¶è¾“å‡ºç±»å‹ case 57:
 									 * value = new SimpleDateFormat(
-									 * " yyyy'Äê'MM'ÔÂ' "
+									 * " yyyy'å¹´'MM'æœˆ' "
 									 * ).format(hcell.getDateCellValue());
 									 * break; default: value =
 									 * String.valueOf(hcell.getNumericCellValue(
@@ -186,7 +186,7 @@ public class Excel2Html implements Doc2Html {
 			// }
 			// width -= picture.getCol1X();
 			//
-			// System.out.println(picture.getPath() + "£º" + picture.getRow2Y());
+			// System.out.println(picture.getPath() + "ï¼š" + picture.getRow2Y());
 			// int height = picture.getRow2Y();
 			// for (int i = row1; i < row2; i++) {
 			// height += table.getTr(i).getTd(col1).getHeight();
@@ -431,7 +431,7 @@ public class Excel2Html implements Doc2Html {
 	//
 	static class FormartUtil {
 		static final DecimalFormat fmt1 = new DecimalFormat("#");
-		static final SimpleDateFormat dateFmt1 = new SimpleDateFormat("yyyyÄêMÔÂdÈÕ");
+		static final SimpleDateFormat dateFmt1 = new SimpleDateFormat("yyyyå¹´Mæœˆdæ—¥");
 		static final SimpleDateFormat dateFmt2 = new SimpleDateFormat("yyyy/MM/dd");
 		static final SimpleDateFormat dateFmt3 = new SimpleDateFormat("yyyy/MM/dd HH:mm");
 		static final SimpleDateFormat dateFmt4 = new SimpleDateFormat("yyyy/MM/dd HH:mm a");
